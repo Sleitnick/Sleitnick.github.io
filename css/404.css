@@ -1,0 +1,36 @@
+@font-face {
+	font-family: "Tahoma";
+	src: url("../fonts/tahoma.ttf");
+}
+@font-face {
+	font-family: "Consolas";
+	src: url("../fonts/consola.ttf");
+}
+@font-face {
+	font-family: "HighTower";
+	src: url("../fonts/hightower.ttf");
+}
+
+html, body {
+	font-family: "HighTower", "Georgia", serif;
+	padding: 0;
+	margin: 0;
+	background:rgb(220, 220, 220);
+}
+
+
+h1 {
+	color:rgb(40, 80, 120);
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:3em;
+}
+
+p {
+	color:rgb(110, 110, 110);
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size:2em;
+}

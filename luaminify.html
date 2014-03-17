@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script src="js/luaparse.js"></script>
+		<script src="js/luamin.js"></script>
+		<script src="js/rainbow.js"></script>
+		<script src="js/main_luaminify.js"></script>
+		<link href="css/style_luaminify.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" type="image/png" href="imgs/favicon.png"/>
+		<title>Lua Minify</title>
+	</head>
+	<body>
+		<header>
+			Lua Minify
+		</header>
+		<div id="container">
+			<div id="content">
+				</br></br>
+				<h2>Minify your Lua scripts</h2>
+				<p>
+					Minify your Lua scripts by pasting the code
+					into the Input Code text area below. Once
+					done, click the Minify button. The outputted
+					minified Lua code will be displayed below
+					the button.
+				</p>
+				</br>
+				<h3>Input Code:</h3>
+				<pre><textarea class="code-display" id="code-input"></textarea></pre>
+				</br>
+				<div id="minify-button">Minify</div>
+				<h3>Output:</h3>
+				<pre id="code-output"></pre>
+			</div>
+			<footer>Copyright &copy 2014, Stephen Leitnick. All rights reserved.</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,252 @@
+@font-face {
+	font-family: "Tahoma";
+	src: url("../fonts/tahoma.ttf");
+}
+@font-face {
+	font-family: "Consolas";
+	src: url("../fonts/consola.ttf");
+}
+
+html, body {
+	font-family: "Tahoma", "Verdana", serif;
+	padding: 0;
+	margin: 0;
+	background:rgb(220, 220, 220);
+}
+
+header {
+	background: rgb(0, 37, 122);
+	height: 2em;
+	line-height: 2em;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	color:white;
+	font-size:3em;
+	z-index: 100;
+	box-shadow: 0px 2px 15px black;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
+
+#container {
+	position:absolute;
+	top:6em;
+	width:75%;
+	left:12.5%;
+}
+
+
+#content {
+	background:white;
+	padding: 1em;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	color:rgb(120, 120, 120);
+	box-shadow: 0px 0px 5px black;
+	background-image:url("../imgs/lua-logo.png");
+	background-repeat: no-repeat;
+}
+
+p {
+	margin-left:40px;
+	margin-right:40px;
+	padding-left:10px;
+	border-left:solid;
+	border-left-width:2px;
+	border-color: rgb(200, 200, 200);
+}
+
+footer {
+	position:absolute;
+	width:100%;
+	text-align: center;
+	margin-top:4em;
+	margin-bottom:1em;
+	color: rgb(100, 100, 100);
+}
+
+
+.code-display {
+	width:calc(100% - 2em);
+	height:10em;
+	vertical-align: text-top;
+	background:inherit;
+	border:0;
+/*	padding: 1em;*/
+	resize: none;
+}
+
+#minify-button {
+	background:rgb(220, 220, 220);
+	height:3em;
+	width:10em;
+	line-height: 3em;
+	font-family: inherit;
+	font-size: 1.1em;
+	text-align: center;
+	border-radius: 1em;
+	border:solid;
+	border-width:1px;
+	border-color:rgb(150, 150, 150);
+}
+
+#minify-button:hover {
+	background:rgb(150, 150, 150);
+	color:white;
+	border-color:rgb(0, 0, 0);
+	cursor: pointer;
+}
+
+#minify-button:active {
+	background:rgb(120, 120, 120);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+pre {
+	/* original is white background with no border */
+	background-color: #F8F8FF;
+	border: 1px solid #DEDEDE;
+	word-wrap: break-word;
+	margin: 0;
+	padding: 10px;
+	color: #000;
+	font-size: 13px;
+	line-height: 16px;
+	margin-bottom: 20px;
+	margin-top:20px;
+}
+
+pre, code {
+	font-family: "Consolas", monospace;
+}
+
+pre .comment {
+	color: #888;
+}
+
+pre .keyword, pre .selector, pre .storage.module, pre .storage.class, pre .storage.function {
+	color: #080;
+	font-weight: bold;
+}
+
+pre .keyword.operator {
+	color: #000;
+	font-weight: normal;
+}
+
+pre .constant.language {
+	color: #038;
+	font-weight:bold;
+}
+
+pre .constant.symbol, pre .class, pre .constant {
+	color: #036;
+	font-weight: bold;
+}
+
+pre .keyword.namespace, pre .entity.name.class {
+	color: #B06;
+	font-weight: bold;
+}
+
+pre .constant.numeric {
+	color: #00D;
+	font-weight: bold;
+}
+
+pre .string, pre .comment.docstring {
+	color: #D20;
+	background-color: #FFF0F0;
+}
+
+pre .string.regexp {
+	background-color: #FFF0FF;
+	color: #808;
+}
+
+pre .variable.instance {
+	color: #33B;
+}
+
+pre .entity.name.function {
+	color: #06B;
+	font-weight: bold;
+}
+
+pre .support.tag-name, pre .entity.tag.script, pre .entity.tag.style {
+	color: #070;
+}
+
+pre .support.attribute {
+	color: #007;
+	font-style: italic;
+}
+
+pre .entity.name.tag, pre .storage.type {
+	color: #070;
+	font-weight: bold;
+}
+
+pre .variable.self, pre .support.function {
+	color: #038;
+	font-weight: bold;
+}
+
+pre .entity.function, pre .support.magic, pre.support.method {
+	color: #C00;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px), handheld {
+
+	#container {
+		position:absolute;
+		top:6em;
+		width:100%;
+		left:0;
+	}
+
+
+	#content {
+		background:white;
+		padding: 1em;
+		border-radius: 0;
+		color:rgb(120, 120, 120);
+		box-shadow: 0;
+		background-image:none;
+	}
+
+}
